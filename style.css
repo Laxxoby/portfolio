@@ -1,14 +1,22 @@
+@font-face {
+    font-family: 'Montserrat_Alternates';
+    /* Nombre de la fuente */
+    src: url('fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf') format('truetype');
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@font-face {
+    font-family: 'Michroma';
+    /* Nombre de la fuente */
+    src: url('fonts/Michroma/Michroma-Regular.ttf') format('truetype');
+}
 
 body {
     padding: 0;
     margin: 0;
     font-size: 14px;
     background-color: #280B4E;
-    font-family: 'Montserrat Alternates', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    font-family: 'Montserrat_Alternates', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 header {
@@ -42,7 +50,7 @@ nav a:visited {
     font-weight: 400;
     font-size: 1.3rem;
     color: #ffffff;
-    
+
 }
 
 nav {
@@ -88,22 +96,54 @@ nav a:hover {
     }
 }
 
+@keyframes mi-liz {
+
+    0%,
+    100% {
+        transform: rotate(-0.5deg);
+        color: yellow;
+    }
+
+    50% {
+        transform: rotate(0.5deg);
+        color: #ffffff;
+    }
+
+}
+
 
 
 nav li:nth-child(1) a {
-    animation: mi-animacion 1.7s forwards;
+    animation-name: mi-animacion, mi-liz;
+    animation-duration: 1.7s, 0.1s;
+    animation-delay: 0s, 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1, infinite;
+
 }
 
 nav li:nth-child(2) a {
-    animation: mi-animacion 1.9s forwards;
+    animation-name: mi-animacion, mi-liz;
+    animation-duration: 1.9s, 0.1s;
+    animation-delay: 0s, 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1, infinite;
 }
 
 nav li:nth-child(3) a {
-    animation: mi-animacion 2.1s forwards;
+    animation-name: mi-animacion, mi-liz;
+    animation-duration: 1.9s, 0.1s;
+    animation-delay: 0s, 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1, infinite;
 }
 
 nav li:nth-child(4) a {
-    animation: mi-animacion 2.3s forwards;
+    animation-name: mi-animacion, mi-liz;
+    animation-duration: 1.9s, 0.1s;
+    animation-delay: 0s, 6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1, infinite;
 }
 
 /* ============= end Nav =============   */
@@ -157,7 +197,7 @@ h1 {
 main p,
 main h2 {
     font-size: 1.3rem;
-    
+
 }
 
 .icon-social {
@@ -181,6 +221,5 @@ main h2 {
     height: 60px;
     transform: rotate(10deg);
 }
+
 /* ============= end main =============   */
-
-
