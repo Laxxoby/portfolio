@@ -19,12 +19,28 @@ body {
 
 }
 
+@keyframes animation-header {
+    0% {
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.078);
+    }
+    100% {
+        box-shadow: 0px 1px 5px yellow;
+    }
+}
+
+
 header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    box-sizing: border-box;
     display: flex;
+    font-weight: bold;
     justify-content: space-between;
     align-items: center;
-
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.078);
     background-color: #130428;
+    animation: animation-header 0.2s 6210ms forwards;
 }
 
 main,
@@ -81,7 +97,7 @@ nav a:hover {
 
 @keyframes mi-animacion {
     0% {
-        transform: translateY(-80px);
+        transform: translateY(-120px);
         color: transparent;
     }
 
@@ -119,7 +135,6 @@ nav li:nth-child(1) a {
     animation-delay: 0s, 3s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1, infinite;
-
 }
 
 nav li:nth-child(2) a {
@@ -159,17 +174,41 @@ header div img {
     height: auto;
 }
 
+header div {
+    animation: mi-animacion 1s forwards;
+}
+
+
 /* ============= end Icon =============   */
+
+@keyframes animacion-main {
+    0% {
+        color: transparent;
+        fill: transparent;
+
+    }
+
+    30% {
+        color: transparent;
+        fill: transparent;
+    }
+
+    100% {
+        color: #ffffff;
+        fill: #ffffff;
+    }
+}
 
 /* ============= main =============   */
 main {
     height: calc(100vh - 120px);
+    margin-top: 120px;
     padding-top: 60px;
     box-sizing: border-box;
-    border: 3px solid white;
     display: flex;
     align-items: center;
     flex-direction: column;
+    /* border: 3px solid white; */
 }
 
 .logo {
@@ -220,6 +259,13 @@ main h2 {
     width: 60px;
     height: 60px;
     transform: rotate(10deg);
+}
+
+main p,
+main h2,
+h1,
+main div svg{
+    animation: animacion-main 3s forwards;
 }
 
 /* ============= end main =============   */
