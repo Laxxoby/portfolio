@@ -19,6 +19,15 @@ body {
 
 }
 
+@keyframes color-nav {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #110422;
+    }
+}
+
 @keyframes animation-header {
     0% {
         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.078);
@@ -38,9 +47,15 @@ header {
     font-weight: bold;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.078);
-    background-color: #130428;
-    animation: animation-header 0.2s 6210ms forwards;
+    background-color: transparent;
+    /* animation: animation-header 0.2s 6109ms forwards; */
+
+    /* animation: color-nav 0.2s 1 forwards; */
+
+    animation-name: animation-header, color-nav;
+    animation-duration: 0.2s, 2s;
+    animation-delay: 6109ms, 0s;
+    animation-fill-mode: forwards;
 }
 
 main,
@@ -97,7 +112,7 @@ nav a:hover {
 
 @keyframes mi-animacion {
     0% {
-        transform: translateY(-120px);
+        transform: translateY(-180px);
         color: transparent;
     }
 
@@ -195,7 +210,6 @@ header div {
 
     100% {
         color: #ffffff;
-        fill: #ffffff;
     }
 }
 
@@ -255,9 +269,9 @@ main h2 {
 }
 
 .icon-social svg:hover {
-    fill: #f8e21d;
     width: 60px;
     height: 60px;
+    fill: #f8e21d;
     transform: rotate(10deg);
 }
 
