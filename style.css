@@ -16,8 +16,9 @@ body {
     font-size: 14px;
     background-color: #280B4E;
     font-family: 'Montserrat_Alternates', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    scroll-behavior: smooth;
 }
+
 
 @keyframes color-nav {
     0% {
@@ -379,12 +380,14 @@ main div svg {
 
 /* ============= About me =============   */
 .aboutme,
-.meproyects {
-    padding-block-start: 10rem;
+.meproyects,
+.contactme {
+    padding-block-start: 6rem;
 }
 
 .aboutme h2,
-.meproyects h2 {
+.meproyects h2,
+.contactme h2 {
     text-align: center;
     font-size: 2.2rem;
     letter-spacing: 3px;
@@ -395,7 +398,8 @@ main div svg {
 }
 
 .aboutme h2 span::after,
-.meproyects h2 span::after {
+.meproyects h2 span::after,
+.contactme h2 span::after {
     content: '';
     position: absolute;
     top: calc(100% + 1.5rem);
@@ -493,3 +497,133 @@ main div svg {
 }
 
 /* ============= end About me =============   */
+
+
+/* ============= Proyect =============   */
+.proyects-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.item-proyect {
+    order: 2;
+    position: relative;
+    margin-inline: 7rem;
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.reverse-proyect{
+    text-align: right;
+    flex-direction: row;
+}
+
+.reverse-proyect .tools, .reverse-proyect .icon-proyect {
+    justify-content: flex-end;
+}
+
+.right-proyect-body{
+    position: absolute;
+    right: 0;
+}
+
+.left-proyect-body{
+    position: absolute;
+    left: 0;
+}
+
+.body-item-proyect {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 1rem;
+    padding-block: 2rem;
+    width: 50%;
+}
+
+.body-item-proyect h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.description {
+    font-size: 0.9rem;
+    background-color: #361C7F;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px -15px rgba(12, 2, 27, 0.7);
+    line-height: 1.3;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+}
+
+.tools {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.tools li {
+    font-size: 0.8rem;
+}
+
+.icon-proyect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-proyect svg{
+    width: 1.3rem; 
+    height: 1.3rem;
+}
+
+.icon-proyect a{
+    color: white;
+}
+
+.imagen-proyect {
+    position: relative;
+    display: inline-block;
+    order: -1;
+    box-shadow: 0 10px 30px -15px rgba(12, 2, 27, 0.7);
+}
+
+.imagen-proyect img {
+    display: block;
+    width: 36rem;
+    height: 23rem;
+}
+
+.imagen-proyect a{
+    vertical-align: middle;
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    background-color: #f8e21d;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.imagen-proyect .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    border-radius: 4px;
+    background-color: rgba(55, 10, 96, 0.7); /* Color azul con transparencia */
+    transition: opacity 0.3s; /* Transición suave de la opacidad */
+    opacity: 1; /* Opacidad inicial */
+}
+
+.imagen-proyect:hover .overlay {
+    opacity: 0; /* Hace que la capa se vuelva transparente al pasar el mouse sobre el contenedor */
+}
+/* ============= end Proyect =============   */
