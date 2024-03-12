@@ -516,21 +516,22 @@ main div svg {
     flex-direction: row-reverse;
 }
 
-.reverse-proyect{
+.reverse-proyect {
     text-align: right;
     flex-direction: row;
 }
 
-.reverse-proyect .tools, .reverse-proyect .icon-proyect {
+.reverse-proyect .tools,
+.reverse-proyect .icon-proyect {
     justify-content: flex-end;
 }
 
-.right-proyect-body{
+.right-proyect-body {
     position: absolute;
     right: 0;
 }
 
-.left-proyect-body{
+.left-proyect-body {
     position: absolute;
     left: 0;
 }
@@ -550,6 +551,7 @@ main div svg {
 }
 
 .description {
+    z-index: 1;
     font-size: 0.9rem;
     background-color: #361C7F;
     border-radius: 4px;
@@ -572,26 +574,25 @@ main div svg {
     font-size: 0.8rem;
 }
 
-.icon-proyect{
+.icon-proyect {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
 }
 
-.icon-proyect svg{
-    width: 1.3rem; 
+.icon-proyect svg {
+    width: 1.3rem;
     height: 1.3rem;
 }
 
-.icon-proyect a{
+.icon-proyect a {
     color: white;
 }
 
 .imagen-proyect {
     position: relative;
     display: inline-block;
-    order: -1;
     box-shadow: 0 10px 30px -15px rgba(12, 2, 27, 0.7);
 }
 
@@ -601,7 +602,7 @@ main div svg {
     height: 23rem;
 }
 
-.imagen-proyect a{
+.imagen-proyect a {
     vertical-align: middle;
     display: inline-block;
     width: inherit;
@@ -616,14 +617,93 @@ main div svg {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     border-radius: 4px;
-    background-color: rgba(55, 10, 96, 0.7); /* Color azul con transparencia */
-    transition: opacity 0.3s; /* Transición suave de la opacidad */
-    opacity: 1; /* Opacidad inicial */
+    background-color: rgba(55, 10, 96, 0.7);
+    /* Color azul con transparencia */
+    transition: opacity 0.3s;
+    /* Transición suave de la opacidad */
+    opacity: 1;
+    /* Opacidad inicial */
 }
 
 .imagen-proyect:hover .overlay {
-    opacity: 0; /* Hace que la capa se vuelva transparente al pasar el mouse sobre el contenedor */
+    opacity: 0;
+    /* Hace que la capa se vuelva transparente al pasar el mouse sobre el contenedor */
 }
+
 /* ============= end Proyect =============   */
+
+/* ============= Contactme =============   */
+
+.contactme {
+    text-align: center;
+    margin: 0px auto 100px;
+    max-width: 600px;
+    padding: 100px;
+    padding-top: 50px;
+}
+
+.contactme h2 {
+    margin-bottom: 3rem;
+}
+
+.contactme h3 {
+    font-size: 2rem;
+}
+
+.contactme p {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.say-hello-buttom:link,
+.say-hello-buttom:visited {
+    text-decoration: none;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8 rem;
+    font-family: 'Montserrat_Alternates', 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-family: "Michroma", sans-serif;
+    color: #ffffff;
+}
+
+.say-hello-buttom {
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    width: fit-content;
+    margin-top: 4rem;
+    background-color: #361C7F;
+    box-shadow: 0 0px 5px 2px rgba(19, 19, 19, 0.119), 0px 0px 50px 1px rgba(26, 26, 26, 0.511);
+    border-radius: 1rem;
+    padding-block: 0.9rem;
+    padding-inline: 1rem;
+
+}
+
+.say-hello-buttom:hover {
+    color: #110422;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 2px white, 0px 0px 2px 1px white, 0px 0px 100px 1px rgba(255, 255, 255, 0.409);
+}
+
+/* ============= end Contactme =============   */
+
+footer{
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+footer a:link,
+footer a:visited{
+    word-spacing: 3px;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: #e5e0edc3;
+}
+
+footer a:hover {
+    color: white;
+}
