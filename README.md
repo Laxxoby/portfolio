@@ -1,4 +1,12 @@
-My first web portfolio, created only with HTML and CSS, and hosted with [Netlify](https://www.netlify.com/)
+<div align="center">
+  <img alt="Logo" src="https://github.com/Laxxoby/portfolio/blob/main/images/image_3-removebg-preview.png" width="100" />
+</div>
+<h1 align="center">
+  laxxoby.com - v1
+</h1>
+<p align="center">
+  My first web portfolio, created only with HTML and CSS, and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+</p>
 
 ![demo](https://github.com/Laxxoby/portfolio/blob/main/images/view-demo.png)
 
