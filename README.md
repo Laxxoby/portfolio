@@ -1,3 +1,5 @@
+My first web portfolio, created only with HTML and CSS, and hosted with [Netlify](https://www.netlify.com/)
+
 ![demo](https://github.com/Laxxoby/portfolio/blob/main/images/view-demo.png)
 
 ## 🎨 Color Reference
