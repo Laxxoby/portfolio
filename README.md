@@ -1,4 +1,4 @@
-![demo](https://raw.githubusercontent.com/bchiang7/v4/main/src/images/demo.png](https://github.com/Laxxoby/portfolio/blob/main/images/view-demo.png)
+![demo](https://github.com/Laxxoby/portfolio/blob/main/images/view-demo.png)
 
 ## 🎨 Color Reference
 
