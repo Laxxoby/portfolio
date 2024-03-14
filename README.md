@@ -5,7 +5,7 @@
   laxxoby.com - v1
 </h1>
 <p align="center">
-  My first web portfolio, created only with HTML and CSS, and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  My first web portfolio, built only with HTML and CSS, and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/brittanychiang/deploys" target="_blank">
