@@ -3,13 +3,14 @@
 </div>
 <h1 align="center">
   laxxoby.com - v1
+  <a href="https://johanlasso.netlify.app" target="_blank"> laxxoby.com - v1 </a>
 </h1>
 <p align="center">
   My first web portfolio, built only with HTML and CSS, and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
-  <a href="https://app.netlify.com/sites/brittanychiang/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
+  <a href="https://app.netlify.com/sites/johanlasso/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/db954673-9ed3-478a-afc8-3d012c47e6b4/deploy-status" alt="Netlify Status" />
   </a>
 </p>
 
