@@ -1,3 +1,5 @@
+/* GENERAL */
+
 @font-face {
     font-family: 'Montserrat_Alternates';
     /* Nombre de la fuente */
@@ -19,6 +21,11 @@ body {
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animaciones */
 
 @keyframes color-nav {
     0% {
@@ -40,6 +47,7 @@ body {
     }
 }
 
+/* ============= header =============   */
 
 header {
     position: fixed;
