@@ -3,13 +3,13 @@
 @font-face {
     font-family: 'Montserrat_Alternates';
     /* Nombre de la fuente */
-    src: url('fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf') format('truetype');
+    src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Michroma';
     /* Nombre de la fuente */
-    src: url('fonts/Michroma/Michroma-Regular.ttf') format('truetype');
+    src: url('../fonts/Michroma/Michroma-Regular.ttf') format('truetype');
 }
 
 body {
@@ -18,12 +18,21 @@ body {
     font-size: 14px;
     background-color: #280B4E;
     font-family: 'Montserrat_Alternates', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
+/* Scroll bar */
+
+html {
+    scrollbar-width:thin;
+    scrollbar-color: #280B4E #523776;
+
+}
+
+
 
 /* Animaciones */
 
@@ -266,6 +275,7 @@ h1 {
 
 h1 {
     font-size: 3.5rem;
+    font-weight: bold;
     margin-bottom: 1rem;
     font-family: "Michroma", sans-serif;
 }
@@ -274,7 +284,10 @@ h1 {
 main p,
 main h2 {
     font-size: 1.3rem;
+}
 
+main h2 {
+    font-weight: bold;
 }
 
 .icon-social {
@@ -326,8 +339,9 @@ main div svg {
 }
 
 .luces {
+    box-sizing: border-box;
     width: 27px;
-    min-height: 40px;
+    min-height: 50px;
     margin: 6px;
     padding-block: 5px;
     margin-block: 10px;
@@ -398,6 +412,7 @@ main div svg {
 .contactme h2 {
     text-align: center;
     font-size: 2.2rem;
+    font-weight: bold;
     letter-spacing: 3px;
     margin-bottom: 7rem;
     margin-top: 3rem;
@@ -702,13 +717,13 @@ main div svg {
 
 /* ============= end Contactme =============   */
 
-footer{
+footer {
     text-align: center;
     margin-bottom: 1.8rem;
 }
 
 footer a:link,
-footer a:visited{
+footer a:visited {
     word-spacing: 3px;
     font-size: 0.7rem;
     text-decoration: none;
