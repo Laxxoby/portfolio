@@ -1,0 +1,36 @@
+h1 {
+    padding-inline: 15rem;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 5rem;
+    margin-top: 6rem;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    height: 5px;
+    width: 2rem;
+    background: #eae8ef;
+    box-shadow: 1px 1px 10px 1px white, 1px 1px 30px 4px white;
+    left: 50%;
+    transform: translateX(-55%);
+    border-radius: 5px;
+}
+
+header {
+    margin-block: 0;
+    padding-inline: 4rem;
+}
+
+nav {
+    height: 30px;
+    margin-block: 10px;
+}
+
+.icon {
+    width: 40px;
+    height: auto;
+}
