@@ -5,6 +5,8 @@ h1 {
     margin-bottom: 5rem;
     margin-top: 6rem;
     position: relative;
+    /* color: #eae8ef; */
+    animation-duration: 500ms;
 }
 
 h1::after {
