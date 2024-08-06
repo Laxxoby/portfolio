@@ -1,0 +1,70 @@
+@media screen and (max-width: 768px) {
+
+    header {
+        justify-content: center;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    nav {
+        height: 30px;
+
+    }
+
+    nav ul {
+        font-size: 1.1rem;
+    }
+
+
+    .logo {
+        width: 150px;
+    }
+
+    .aboutme,
+    .meproyects,
+    .contactme {
+        padding-block-start: 3rem;
+    }
+
+    /* ============= About me =============   */
+
+    .about__content {
+        gap: 2rem;
+    }
+
+    .aboutme h2,
+    .meproyects h2,
+    .contactme h2 {
+        margin-bottom: 5rem;
+        font-size: 2rem;
+    }
+
+    .about__content h3 {
+        font-size: 1.1rem;
+    }
+
+    .about__content p {
+        font-size: .8rem;
+        margin-bottom: .6rem;
+        letter-spacing: .1px;
+    }
+
+    .zone-aboutme a {
+        font-size: .8rem;
+    }
+
+    .skills h4 {
+        font-size: .9rem;
+    }
+
+    .skills ul {
+        gap: 1px;
+    }
+
+    .skills ul li {
+        width: 38px;
+        height: 38px;
+    }
+}

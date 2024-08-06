@@ -92,15 +92,20 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    display: flex;
+    flex: 1;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a:link,
 nav a:visited {
     text-decoration: none;
     display: block;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.4rem;
     color: #ffffff;
 
 }
@@ -113,6 +118,15 @@ nav a:visited {
     }
 }
 
+/* Solo sea anima cuando se cumpla el tamaño de pantalla */
+@media (min-width: 768px) {
+    nav {
+        animation: nav-name-scroll linear both;
+        animation-timeline: scroll();
+        animation-range: 0 150px;
+    }
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -120,21 +134,7 @@ nav {
     padding-block: 10px;
     box-sizing: border-box;
     height: 80px;
-
-    animation: nav-name-scroll linear both;
-    animation-timeline: scroll();
-    animation-range: 0 150px;
 }
-
-
-nav ul {
-    display: flex;
-    flex: 1;
-    gap: 30px;
-    justify-content: space-between;
-    align-items: center;
-}
-
 
 
 nav a:hover {
@@ -210,17 +210,17 @@ nav li:nth-child(4) a {
 /* ============= end Nav =============   */
 
 /* ============= Icon =============   */
-header div {
+header .icon {
     width: 80px;
     height: auto;
 }
 
-header div img {
+header .icon img {
     width: 100%;
     height: auto;
 }
 
-header div {
+header .icon {
     animation: mi-animacion 1s forwards;
 }
 
@@ -271,10 +271,11 @@ main p,
 main h2,
 h1 {
     margin: 0;
+    text-align: center;
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: calc(1.2rem + 3vw);
     font-weight: bold;
     margin-bottom: 1rem;
     font-family: "Michroma", sans-serif;
@@ -283,7 +284,8 @@ h1 {
 
 main p,
 main h2 {
-    font-size: 1.3rem;
+    word-wrap: break-word;
+    font-size: calc(1rem + .3vw);
 }
 
 main h2 {
@@ -501,7 +503,6 @@ main div svg {
 .skills ul {
     margin: 0;
     padding: 0;
-    list-style: none;
     display: flex;
     flex-flow: row wrap;
     /* justify-content: end; */
@@ -516,6 +517,13 @@ main div svg {
 
 .skills abbr {
     border-radius: 5px;
+}
+
+.skills svg {
+    padding: 0;
+    margin: 0;
+    width: 44px;
+    height: auto;
 }
 
 /* ============= end About me =============   */
