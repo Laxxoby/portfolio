@@ -132,3 +132,20 @@
         font-size: 1.1rem;
     }
     
+    .contactme{
+        padding-bottom: 0;
+    }
+
+    .contactme h2 {
+        font-size: 1.7rem;
+    }
+
+    .contactme h3 {
+        font-size: 1.5rem;
+    }
+
+    .contactme p{
+        font-size: .9rem;
+    }
+
+}
