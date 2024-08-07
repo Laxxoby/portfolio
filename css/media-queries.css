@@ -178,4 +178,9 @@
     .item-proyect {
         margin-inline: 0;
     }
+
+    /* Contact Me */
+    .contactme p{
+        font-size: .7rem;
+    }
 }
