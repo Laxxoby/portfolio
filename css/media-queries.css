@@ -149,3 +149,23 @@
     }
 
 }
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
+    /* ============= About me =============   */
+
+    .about__content {
+        display: block;
+    }
+
+    .skills {
+        margin-top: 3rem;
+    }
+
+    /* ============= Proyect =============   */
+
+    .item-proyect {
+        margin-inline: 0;
+    }
+}
