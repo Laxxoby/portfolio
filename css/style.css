@@ -530,16 +530,11 @@ main div svg {
 
 
 /* ============= Proyect =============   */
-.proyects-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
 .item-proyect {
     order: 2;
     position: relative;
-    margin-inline: 7rem;
+    margin-inline: calc(2rem + 6vw);
     margin-bottom: 5rem;
     display: flex;
     align-items: center;
@@ -568,11 +563,16 @@ main div svg {
 
 .body-item-proyect {
     display: flex;
+    /* z-index: 1; */
     flex-direction: column;
     justify-items: center;
     gap: 1rem;
     padding-block: 2rem;
     width: 50%;
+}
+
+.body-item-proyect *{
+    z-index: 1;
 }
 
 .body-item-proyect h3 {
@@ -583,7 +583,6 @@ main div svg {
 
 .description {
     color: rgba(255, 255, 255, 0.85);
-    z-index: 1;
     font-size: 0.9rem;
     background-color: #361C7F;
     border-radius: 4px;
@@ -631,8 +630,8 @@ main div svg {
 
 .imagen-proyect img {
     display: block;
-    width: 36rem;
-    height: 23rem;
+    width: calc(13rem + 24vw);/* 36rem; */
+    height: calc(13rem + 20vh);/* 23rem; */
 }
 
 .imagen-proyect a {
@@ -673,7 +672,7 @@ main div svg {
     color: rgba(255, 255, 255, 0.85);
     text-align: center;
     margin: 0px auto 100px;
-    max-width: 600px;
+    max-width: 640px;
     padding: 100px;
     padding-top: 50px;
 }
