@@ -47,3 +47,67 @@
     .contactme {
         padding-block-start: 3rem;
     }
+
+    /* ============= About me =============   */
+
+    .about__content {
+        gap: 2rem;
+    }
+
+    .aboutme h2,
+    .meproyects h2,
+    .contactme h2 {
+        margin-bottom: 5rem;
+        font-size: 2rem;
+    }
+
+    .about__content h3 {
+        font-size: 1.1rem;
+    }
+
+    .about__content p {
+        font-size: .8rem;
+        margin-bottom: .6rem;
+        letter-spacing: .1px;
+    }
+
+    .zone-aboutme a {
+        font-size: .8rem;
+    }
+
+    .skills h4 {
+        font-size: .9rem;
+    }
+
+    .skills ul {
+        gap: 1px;
+    }
+
+    .skills ul li {
+        width: 38px;
+        height: 38px;
+    }
+
+    /* ============= Proyect =============   */
+
+    .reverse-proyect {
+        text-align: left;
+        flex-direction: row;
+    }
+
+    .reverse-proyect .tools,
+    .reverse-proyect .icon-proyect {
+        justify-content: flex-start;
+    }
+
+    .body-item-proyect {
+        width: 100%;
+        padding-inline: 2rem;
+        box-sizing: border-box;
+    }
+
+    .description {
+        box-shadow: none;
+        background-color: transparent;
+        padding-inline: 0;
+    }
